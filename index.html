@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarn Subodh International School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            overflow-y: scroll;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+        }
+        .navbar {
+            background: #1e3c72;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .school-image {
+            width: 100%;
+            height: auto; /* इमेज की असली साइज़ में दिखाने के लिए */
+            object-fit: contain; /* इमेज बिना कटे दिखेगी */
+        }
+        .logo-section {
+            position: absolute;
+            top: 25%;
+            
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+        .school-logo {
+            width: 115px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+        }
+        .welcome-box {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(2, 9, 27, 0.7);
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.4rem;
+            width: 60%;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translate(-50%, -70%); }
+            100% { opacity: 1; transform: translate(-50%, -50%); }
+        }
+        .registration-text {
+            margin-top: 15px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color:rgb(225, 119, 32);
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+            animation: bounce 1.5s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        .marquee-container {
+            width: 100%;
+            background: black;
+            color: yellow;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Swarn Subodh International School</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">The School</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Admission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Infrastructure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Results</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Notice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Members</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <img src="mmmmmm.jpeg" alt="Swarn Subodh School" class="school-image">
+        <div class="logo-section">
+            <img src="muu.jpeg" alt="School Logo" class="school-logo">
+        </div>
+        <div class="welcome-box">
+            <p>Welcome to Swarn Subodh International School... <br> Where education never stops!</p>
+            <p class="registration-text">🎉 Registration Start for 2025-26 Session 🎉</p>
+        </div>
+    </section>
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left">Admissions Open for 2025-26! Apply Now | Limited Seats Available | Scholarship Programs Available</marquee>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
